@@ -1,0 +1,15 @@
+# 秘密情報
+.env
+*.env
+!.env.example
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# 実行時に生成されるもの
+state.json
+raw.json
+cron.log
+*.log

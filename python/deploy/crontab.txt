@@ -1,0 +1,2 @@
+# 毎朝7:00に定時通知(Webhook)。時刻はUbuntuのタイムゾーンで動く
+0 7 * * * cd /home/YOUR_USER/lms-assignment-notifier/python && .venv/bin/python notify.py >> cron.log 2>&1

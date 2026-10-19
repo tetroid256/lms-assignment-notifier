@@ -1,0 +1,3 @@
+requests>=2.31
+tzdata
+discord.py>=2.4

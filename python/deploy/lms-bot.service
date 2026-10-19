@@ -1,0 +1,15 @@
+[Unit]
+Description=LMS worklist Discord bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# ユーザー名とパスは環境に合わせて書き換える
+User=YOUR_USER
+WorkingDirectory=/home/YOUR_USER/lms-assignment-notifier/python
+ExecStart=/home/YOUR_USER/lms-assignment-notifier/python/.venv/bin/python bot.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
